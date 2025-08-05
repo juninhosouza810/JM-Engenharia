@@ -289,6 +289,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
+            margin-bottom: 2rem;
         }
 
         .contact-item {
@@ -327,7 +328,7 @@
             font-size: 1.2rem;
             font-weight: 700;
             cursor: pointer;
-            margin: 2rem 0;
+            margin: 1rem 0.5rem;
             transition: all 0.3s ease;
             text-decoration: none;
             display: inline-block;
@@ -338,6 +339,16 @@
             transform: translateY(-3px);
             box-shadow: 0 10px 25px rgba(231, 76, 60, 0.4);
             background: linear-gradient(135deg, #c0392b, #a93226);
+        }
+
+        .cta-button.instagram {
+            background: linear-gradient(135deg, #E1306C, #C13584);
+            box-shadow: 0 5px 15px rgba(225, 48, 108, 0.3);
+        }
+
+        .cta-button.instagram:hover {
+            background: linear-gradient(135deg, #C13584, #833AB4);
+            box-shadow: 0 10px 25px rgba(225, 48, 108, 0.4);
         }
 
         .floating-elements {
@@ -471,6 +482,12 @@
             .example-image {
                 max-width: 250px;
             }
+
+            .cta-button {
+                margin: 0.5rem 0.2rem;
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+            }
         }
 
         @media (max-width: 480px) {
@@ -489,6 +506,12 @@
             .modal-content {
                 width: 95%;
                 padding: 10px;
+            }
+
+            .cta-button {
+                display: block;
+                margin: 0.5rem auto;
+                width: 90%;
             }
         }
     </style>
@@ -570,14 +593,10 @@
         <div class="contact-container">
             <h2 class="contact-title">ENTRE EM CONTATO AGORA</h2>
             
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-label">Instagram</div>
-                    <div class="contact-value">@jm.engenharia79</div>
-                </div>
-                
-                
+
+            
             <a href="https://wa.me/5518981879566" class="cta-button" target="_blank">FALAR NO WHATSAPP AGORA</a>
+            <a href="https://www.instagram.com/jm.engenharia79?igsh=cXhjOG01d3JxODN0" class="cta-button instagram" target="_blank">SEGUIR NO INSTAGRAM</a>
         </div>
     </section>
 
@@ -631,6 +650,3 @@
     </script>
 </body>
 </html>
-
-
-
